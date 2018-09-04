@@ -1,21 +1,22 @@
+
 #!/usr/bin/env bash
 
-FABRIC_PATH=/tmp/fabric
-KAFKA_PATH=/tmp/kafka
+#FABRIC_PATH=/tmp/fabric
+#KAFKA_PATH=/tmp/kafka
 
 # Create fabric shared dir
-echo -e "\nCreating farbic network shared dir..."
-if [ -d "$FABRIC_PATH" ]; then
-  rm -rf $FABRIC_PATH
-fi
-mkdir -p $FABRIC_PATH/ledger/orderer{0,1,2}
+#echo -e "\nCreating farbic network shared dir..."
+#if [ -d "$FABRIC_PATH" ]; then
+#  rm -rf $FABRIC_PATH
+#fi
+#mkdir -p $FABRIC_PATH/ledger/orderer{0,1,2}
 
 # Create kafka data dir
-echo -e "\nCreating kafka data dir..."
-if [ -d "$KAFKA_PATH" ]; then
-  rm -rf $KAFKA_PATH
-fi
-mkdir -p $KAFKA_PATH/datadir-kafka-{0,1,2,3}
+#echo -e "\nCreating kafka data dir..."
+#if [ -d "$KAFKA_PATH" ]; then
+#  rm -rf $KAFKA_PATH
+#fi
+#mkdir -p $KAFKA_PATH/datadir-kafka-{0,1,2,3}
 
 ###############################################
 
@@ -31,9 +32,9 @@ echo -e "\nCreating required k8s namespaces..."
 kubectl create -f ${KUBECONFIG_FOLDER}/namespaces.yaml
 
 # Creating persistant volumes
-echo -e "\nCreating persistant volumes..."
-kubectl create -f ${KUBECONFIG_FOLDER}/kafka-pvs.yaml
-kubectl create -f ${KUBECONFIG_FOLDER}/fabric-pvs.yaml
+#echo -e "\nCreating persistant volumes..."
+#kubectl create -f ${KUBECONFIG_FOLDER}/kafka-pvs.yaml
+#kubectl create -f ${KUBECONFIG_FOLDER}/fabric-pvs.yaml
 
 # Creating persistant volume claims
 echo -e "\nCreating persistant volume claims..."
