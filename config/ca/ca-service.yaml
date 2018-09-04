@@ -11,7 +11,6 @@ spec:
     role: ca
     org: org1
     name: ca
-  type: NodePort
   ports:
   - name: endpoint
     protocol: TCP
@@ -32,7 +31,6 @@ spec:
     role: ca
     org: org2
     name: ca
-  type: NodePort
   ports:
   - name: endpoint
     protocol: TCP

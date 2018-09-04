@@ -4,6 +4,11 @@ apiVersion: v1
 metadata:
   name: datadir-kafka-0
   namespace: kafka
+  # For IBM File Storage
+  annotations:
+    volume.beta.kubernetes.io/storage-class: "ibmc-file-silver"
+  labels:
+    billingType: "hourly"
 spec:
   accessModes:
     - ReadWriteOnce
@@ -21,6 +26,11 @@ apiVersion: v1
 metadata:
   name: datadir-kafka-1
   namespace: kafka
+  # For IBM File Storage
+  annotations:
+    volume.beta.kubernetes.io/storage-class: "ibmc-file-silver"
+  labels:
+    billingType: "hourly"
 spec:
   accessModes:
     - ReadWriteOnce
@@ -38,6 +48,11 @@ apiVersion: v1
 metadata:
   name: datadir-kafka-2
   namespace: kafka
+  # For IBM File Storage
+  annotations:
+    volume.beta.kubernetes.io/storage-class: "ibmc-file-silver"
+  labels:
+    billingType: "hourly"
 spec:
   accessModes:
     - ReadWriteOnce
@@ -55,6 +70,11 @@ apiVersion: v1
 metadata:
   name: datadir-kafka-3
   namespace: kafka
+  # For IBM File Storage
+  annotations:
+    volume.beta.kubernetes.io/storage-class: "ibmc-file-silver"
+  labels:
+    billingType: "hourly"
 spec:
   accessModes:
     - ReadWriteOnce
