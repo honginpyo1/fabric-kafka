@@ -31,4 +31,9 @@ spec:
         volumeMounts:
         - mountPath: /shared
           name: sharedvolume
-          
+      - name: createdir
+        image: hyperledger/fabric-tools:x86_64-1.1.0
+        command: ["sh", "-c", "mkdir -p /shared/ledger/orderer{0,1,2};"]
+        volumeMounts:
+        - mountPath: /shared
+          name: sharedvolume
