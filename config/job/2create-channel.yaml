@@ -33,6 +33,7 @@ spec:
         command: ["sh", "-c", "while [ ! -f /shared/status_channeltx_complete ]; do echo Waiting for channeltx; sleep 2; done; peer channel create -o ${ORDERER_URL} -c ${CHANNEL_NAME} -f /shared/${CHANNEL_NAME}.tx && rm /shared/status_channeltx_complete && touch /shared/status_channelcreate_complete"]
         env:
         - name: CHANNEL_NAME
+        # changed channel name
           value: mychannel
         - name: ORDERER_URL
           value: orderer0.ordererorg1:7050

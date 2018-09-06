@@ -5,10 +5,10 @@ metadata:
   name: shared-pvc
   namespace: fabric
   # For IBM File Storage
-  annotations:
-    volume.beta.kubernetes.io/storage-class: "ibmc-file-silver"
-  labels:
-    billingType: "hourly"
+  #annotations:
+  #  volume.beta.kubernetes.io/storage-class: "ibmc-file-silver"
+  #labels:
+  #  billingType: "hourly"
 spec:
   accessModes:
     - ReadWriteMany
@@ -26,10 +26,10 @@ metadata:
   name: shared-pvc
   namespace: org1
   # For IBM File Storage
-  annotations:
-    volume.beta.kubernetes.io/storage-class: "ibmc-file-silver"
-  labels:
-    billingType: "hourly"
+  #annotations:
+  #  volume.beta.kubernetes.io/storage-class: "ibmc-file-silver"
+  #labels:
+  #  billingType: "hourly"
 spec:
   accessModes:
     - ReadWriteMany
@@ -47,10 +47,10 @@ metadata:
   name: shared-pvc
   namespace: org2
   # For IBM File Storage
-  annotations:
-    volume.beta.kubernetes.io/storage-class: "ibmc-file-silver"
-  labels:
-    billingType: "hourly"
+  #annotations:
+  #  volume.beta.kubernetes.io/storage-class: "ibmc-file-silver"
+  #labels:
+  #  billingType: "hourly"
 spec:
   accessModes:
     - ReadWriteMany
@@ -68,10 +68,10 @@ metadata:
   name: shared-pvc
   namespace: ordererorg1
   # For IBM File Storage
-  annotations:
-    volume.beta.kubernetes.io/storage-class: "ibmc-file-silver"
-  labels:
-    billingType: "hourly"
+  #annotations:
+  #  volume.beta.kubernetes.io/storage-class: "ibmc-file-silver"
+  #labels:
+  #  billingType: "hourly"
 spec:
   accessModes:
     - ReadWriteMany

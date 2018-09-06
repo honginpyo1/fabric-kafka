@@ -32,9 +32,9 @@ echo -e "\nCreating required k8s namespaces..."
 kubectl create -f ${KUBECONFIG_FOLDER}/namespaces.yaml
 
 # Creating persistant volumes
-#echo -e "\nCreating persistant volumes..."
-#kubectl create -f ${KUBECONFIG_FOLDER}/kafka-pvs.yaml
-#kubectl create -f ${KUBECONFIG_FOLDER}/fabric-pvs.yaml
+echo -e "\nCreating persistant volumes..."
+kubectl create -f ${KUBECONFIG_FOLDER}/kafka-pvs.yaml
+kubectl create -f ${KUBECONFIG_FOLDER}/fabric-pvs.yaml
 
 # Creating persistant volume claims
 echo -e "\nCreating persistant volume claims..."

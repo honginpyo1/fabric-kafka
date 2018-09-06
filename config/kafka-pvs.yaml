@@ -12,8 +12,8 @@ spec:
   capacity:
     storage: 20Gi
   nfs:
-   server: "<nfs_server>"
-   path: "<file_storage_path>"
+   server: "fsf-seo0101b-fz.adn.networklayer.com"
+   path: "/IBM02SEV1557043_65/data01"
 #  hostPath:
 #    path: "/tmp/kafka/datadir-kafka-0"
 
@@ -31,8 +31,8 @@ spec:
   capacity:
     storage: 20Gi
   nfs:
-   server: "<nfs_server>"
-   path: "<file_storage_path>"
+   server: "fsf-seo0101b-fz.adn.networklayer.com"
+   path: "/IBM02SEV1557043_65/data01"
 #  hostPath:
 #    path: "/tmp/kafka/datadir-kafka-1"
 
@@ -50,8 +50,8 @@ spec:
   capacity:
     storage: 20Gi
   nfs:
-   server: "<nfs_server>"
-   path: "<file_storage_path>"
+   server: "fsf-seo0101b-fz.adn.networklayer.com"
+   path: "/IBM02SEV1557043_65/data01"
 #  hostPath:
 #    path: "/tmp/kafka/datadir-kafka-2"
 
@@ -69,7 +69,7 @@ spec:
   capacity:
     storage: 20Gi
   nfs:
-   server: "<nfs_server>"
-   path: "<file_storage_path>"
+   server: "fsf-seo0101b-fz.adn.networklayer.com"
+   path: "/IBM02SEV1557043_65/data01"
 #  hostPath:
 #    path: "/tmp/kafka/datadir-kafka-3"

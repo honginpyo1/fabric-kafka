@@ -33,7 +33,7 @@ spec:
           name: sharedvolume
       - name: createdir
         image: hyperledger/fabric-tools:x86_64-1.1.0
-        command: ["sh", "-c", "mkdir -p /shared/ledger/orderer{0,1,2};"]
+        command: ["sh", "-c", "echo 'mkdir orderer'; rm -rf /shared/ledger; echo 'mkdir kafka'; rm -rf /shared/datadir-kafka-0; rm -rf /shared/datadir-kafka-1; rm -rf /shared/datadir-kafka-2; rm -rf /shared/datadir-kafka-3; mkdir -p /shared/datadir-kafka-0; mkdir -p /shared/datadir-kafka-1; mkdir -p /shared/datadir-kafka-2; mkdir -p /shared/datadir-kafka-3; echo 'rm -rf /tmp/kafka-logs'; rm -rf /tmp/kafka-logs;"]
         volumeMounts:
         - mountPath: /shared
           name: sharedvolume
