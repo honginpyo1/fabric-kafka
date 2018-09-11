@@ -102,6 +102,7 @@ echo "Copy artifacts job completed"
 # Generate Network artifacts using configtx.yaml and crypto-config.yaml
 echo -e "\nGenerating the required artifacts for Blockchain network"
 kubectl create -f ${KUBECONFIG_FOLDER}/job/1gen-artifacts.yaml
+#kubectl create -f ${KUBECONFIG_FOLDER}/job/1-1gen-kafka.yaml
 
 JOBSTATUS=$(kubectl get jobs -n fabric |grep utils|awk '{print $3}')
 while [ "${JOBSTATUS}" != "1" ]; do

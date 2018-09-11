@@ -13,7 +13,7 @@ spec:
   # change nfs server & path
   nfs:
    server: "fsf-seo0101a-fz.adn.networklayer.com"
-   path: "/IBM02SEV1557043_64/data01"
+   path: "/IBM02SEV1557043_66/data01"
 #  hostPath:
 #    path: "/tmp/fabric"
 
@@ -31,7 +31,7 @@ spec:
     - ReadWriteMany
   nfs:
    server: "fsf-seo0101a-fz.adn.networklayer.com"
-   path: "/IBM02SEV1557043_64/data01"
+   path: "/IBM02SEV1557043_66/data01"
 #  hostPath:
 #    path: "/tmp/fabric"
 
@@ -49,7 +49,7 @@ spec:
     - ReadWriteMany
   nfs:
    server: "fsf-seo0101a-fz.adn.networklayer.com"
-   path: "/IBM02SEV1557043_64/data01"
+   path: "/IBM02SEV1557043_66/data01"
 #  hostPath:
 #    path: "/tmp/fabric"
 
@@ -67,6 +67,6 @@ spec:
     - ReadWriteMany
   nfs:
    server: "fsf-seo0101a-fz.adn.networklayer.com"
-   path: "/IBM02SEV1557043_64/data01"
+   path: "/IBM02SEV1557043_66/data01"
 #  hostPath:
 #    path: "/tmp/fabric"

@@ -14,7 +14,7 @@ echo "Deleting Peers..."
 PEERCFG_FLODER=${KUBECONFIG_FOLDER}/peer
 kubectl delete --ignore-not-found=true -f ${PEERCFG_FLODER}
 
-echo "Deleting Oerderers..."
+echo "Deleting Orderers..."
 ORDERERCFG_FOLDER=${KUBECONFIG_FOLDER}/orderer
 kubectl delete --ignore-not-found=true -f ${ORDERERCFG_FOLDER}
 
