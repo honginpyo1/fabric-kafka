@@ -21,7 +21,7 @@ spec:
         command: ["sh", "-c", "peer channel update -o ${ORDERER_URL} -c ${CHANNEL_NAME} -f /shared/Org1MSPanchors.tx"]
         env:
         - name: CHANNEL_NAME
-          value: mychannel
+          value: iphchannel
         - name: ORDERER_URL
           value: orderer0.ordererorg1:7050
         - name: CORE_PEER_ADDRESS
@@ -47,7 +47,7 @@ spec:
         command: ["sh", "-c", "peer channel update -o ${ORDERER_URL} -c ${CHANNEL_NAME} -f /shared/Org2MSPanchors.tx"]
         env:
         - name: CHANNEL_NAME
-          value: mychannel
+          value: iphchannel
         - name: ORDERER_URL
           value: orderer0.ordererorg1:7050
         - name: CORE_PEER_ADDRESS

@@ -21,7 +21,7 @@ spec:
         command: ["sh", "-c", "peer channel fetch newest -o ${ORDERER_URL} -c ${CHANNEL_NAME} && peer channel join -b ${CHANNEL_NAME}_newest.block "]
         env:
         - name: CHANNEL_NAME
-          value: mychannel
+          value: iphchannel
         - name: ORDERER_URL
           value: orderer0.ordererorg1:7050
         - name: CORE_PEER_ADDRESS
@@ -47,7 +47,7 @@ spec:
         command: ["sh", "-c", "peer channel fetch newest -o ${ORDERER_URL} -c ${CHANNEL_NAME} && peer channel join -b ${CHANNEL_NAME}_newest.block "]
         env:
         - name: CHANNEL_NAME
-          value: mychannel
+          value: iphchannel
         - name: ORDERER_URL
           value: orderer0.ordererorg1:7050
         - name: CORE_PEER_ADDRESS
@@ -73,7 +73,7 @@ spec:
         command: ["sh", "-c", "peer channel fetch newest -o ${ORDERER_URL} -c ${CHANNEL_NAME} && peer channel join -b ${CHANNEL_NAME}_newest.block "]
         env:
         - name: CHANNEL_NAME
-          value: mychannel
+          value: iphchannel
         - name: ORDERER_URL
           value: orderer0.ordererorg1:7050
         - name: CORE_PEER_ADDRESS
@@ -99,7 +99,7 @@ spec:
         command: ["sh", "-c", "peer channel fetch newest -o ${ORDERER_URL} -c ${CHANNEL_NAME} && peer channel join -b ${CHANNEL_NAME}_newest.block "]
         env:
         - name: CHANNEL_NAME
-          value: mychannel
+          value: iphchannel
         - name: ORDERER_URL
           value: orderer0.ordererorg1:7050
         - name: CORE_PEER_ADDRESS

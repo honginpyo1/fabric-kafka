@@ -21,7 +21,7 @@ spec:
         command: ["sh", "-c", "cd /shared && pwd && ls && export FABRIC_CFG_PATH=$PWD && configtxgen -profile TwoOrgsChannel -outputCreateChannelTx ${CHANNEL_NAME}.tx -channelID ${CHANNEL_NAME} && configtxgen -profile TwoOrgsChannel -outputAnchorPeersUpdate Org1MSPanchors.tx -channelID ${CHANNEL_NAME} -asOrg Org1MSP && configtxgen -profile TwoOrgsChannel -outputAnchorPeersUpdate Org2MSPanchors.tx -channelID ${CHANNEL_NAME} -asOrg Org2MSP && touch /shared/status_channeltx_complete "]
         env:
         - name: CHANNEL_NAME
-          value: mychannel
+          value: iphchannel
         - name: GODEBUG
           value: "netdns=go"
         volumeMounts:
@@ -34,7 +34,7 @@ spec:
         env:
         - name: CHANNEL_NAME
         # changed channel name
-          value: mychannel
+          value: iphchannel
         - name: ORDERER_URL
           value: orderer0.ordererorg1:7050
         - name: CORE_PEER_ADDRESSAUTODETECT
